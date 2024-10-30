@@ -38,7 +38,7 @@ const HomePage = () => {
         {(step == 2 || step == 3) && (
           <button onClick={handlePrev}>Previous</button>
         )}
-        {step != 4 && <button onClick={handleSubmit}>Next</button>}
+        {step != 4 && <button onClick={handleSubmit}>{step === 3 ? "Submit" : "Next"}</button>}
         {step == 4 && (
           <button
             onClick={() => {
